@@ -9,9 +9,9 @@ created_atdatetime  datetime
 revenueint			int
 
 Thought process:
-1. In this case, first we need to self join the table as compare the day different between transications
+1. In this case, first we need to self join the table as we need to compare the day difference between transications
 2. We need to group by user_id
-3. Add requirement that the date different is less than 7 days
+3. Add requirement that the day difference is less than 7 days
 */
 
 SELECT DISTINCT(a1.user_id)
